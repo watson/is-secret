@@ -1,0 +1,62 @@
+# is-secret
+
+A distributed maintained collection of patterns that indicate that
+something probably is secret.
+
+This is useful if you want to filter sensitive values in a data set.
+
+This module uses a very simple algorithm that will not catch everthing.
+Use at your own risk.
+
+[![Build status](https://travis-ci.org/watson/is-secret.svg?branch=master)](https://travis-ci.org/watson/is-secret)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+
+## Installation
+
+```
+npm install is-secret --save
+```
+
+## Usage
+
+```js
+var isSecret = require('is-secret')
+
+var data = {
+  username: 'watson',
+  password: 'f8bY2fg8',
+  card: '1234 1234 1234 1234' // credit card number
+}
+
+Object.keys(data).forEach(function (key) {
+  if (isSecret.key(key) ||
+      isSecret.key(data[key])) data[key] = '********'
+})
+
+console.log(data)
+// {
+//   username: 'watson',
+//   password: '********',
+//   card: '********'
+// }
+```
+
+## API
+
+### `secret.key(string)`
+
+Validates the given `string` against a list of key names known to
+typically indicate secret data.
+
+Returns `true` if the `string` is considered secret. Otherwise `false`.
+
+### `secret.value(string)`
+
+Validates the given `string` against a list of patterns that indicates
+secret data.
+
+Returns `true` if the `string` is considered secret. Otherwise `false`.
+
+## License
+
+MIT
