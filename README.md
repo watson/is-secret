@@ -41,6 +41,10 @@ console.log(data)
 // }
 ```
 
+_If you need functionality similar to what is shown in this example, I
+suggest you take a look at the
+[redact-secrets](https://github.com/watson/redact-secrets) module._
+
 ## API
 
 ### `secret.key(string)`
