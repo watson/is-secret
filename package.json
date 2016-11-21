@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A distributed maintained collection of patterns that indicate that something probably is secret",
   "main": "index.js",
-  "dependencies": {
+  "devDependencies": {
     "standard": "^8.5.0",
     "tape": "^4.6.2"
   },
