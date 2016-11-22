@@ -30,7 +30,7 @@ var data = {
 
 Object.keys(data).forEach(function (key) {
   if (isSecret.key(key) ||
-      isSecret.key(data[key])) data[key] = '********'
+      isSecret.value(data[key])) data[key] = '********'
 })
 
 console.log(data)
