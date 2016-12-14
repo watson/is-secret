@@ -25,7 +25,6 @@ function key (str) {
   return KEYS.some(function (regex) {
     return regex.test(str)
   })
-  // return STRING.indexOf(str.toLowerCase()) !== -1
 }
 
 function value (str) {
