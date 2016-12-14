@@ -6,8 +6,8 @@ var KEYS = [
   /^pw$/,
   /secret/i,
   /token/i,
-  /api[-\._]?key/i,
-  /session[-\._]?id/i,
+  /api[-._]?key/i,
+  /session[-._]?id/i,
 
   // specific
   /^connect\.sid$/ // https://github.com/expressjs/session
