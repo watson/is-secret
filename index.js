@@ -2,8 +2,7 @@
 
 var KEYS = [
   // generic
-  /password/i,
-  /passwd/i,
+  /passw(or)?d/i,
   /^pw$/,
   /secret/i,
   /token/i,
