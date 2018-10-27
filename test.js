@@ -4,6 +4,7 @@ var test = require('tape')
 var isSecret = require('./')
 
 test('isSecret.key true', function (t) {
+  t.equal(isSecret.key('pass'), true)
   t.equal(isSecret.key('password'), true)
   t.equal(isSecret.key('api-key'), true)
   t.equal(isSecret.key('api.key'), true)
@@ -13,6 +14,7 @@ test('isSecret.key true', function (t) {
 })
 
 test('isSecret.key false', function (t) {
+  t.equal(isSecret.key('passport'), false)
   t.equal(isSecret.key('copenhagen'), false)
   t.equal(isSecret.key('api*key'), false)
   t.end()

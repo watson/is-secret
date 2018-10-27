@@ -4,6 +4,7 @@ var KEYS = [
   // generic
   /passw(or)?d/i,
   /^pw$/,
+  /^pass$/i,
   /secret/i,
   /token/i,
   /api[-._]?key/i,
