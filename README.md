@@ -8,6 +8,7 @@ This is useful if you want to filter sensitive values in a data set.
 This module uses a very simple algorithm that will not catch everthing.
 Use at your own risk.
 
+[![npm](https://img.shields.io/npm/v/is-secret.svg)](https://www.npmjs.com/package/is-secret)
 [![Build status](https://travis-ci.org/watson/is-secret.svg?branch=master)](https://travis-ci.org/watson/is-secret)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
@@ -63,4 +64,4 @@ Returns `true` if the `string` is considered secret. Otherwise `false`.
 
 ## License
 
-MIT
+[MIT](LICENSE)
