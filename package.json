@@ -1,6 +1,6 @@
 {
   "name": "is-secret",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A distributed maintained collection of patterns that indicate that something probably is secret",
   "main": "index.js",
   "devDependencies": {
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/watson/is-secret#readme",
   "coordinates": [
-    55.6794118,
-    12.5807414
+    55.778272,
+    12.593061
   ]
 }
