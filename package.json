@@ -4,8 +4,8 @@
   "description": "A distributed maintained collection of patterns that indicate that something probably is secret",
   "main": "index.js",
   "devDependencies": {
-    "standard": "^8.6.0",
-    "tape": "^4.6.3"
+    "standard": "^12.0.1",
+    "tape": "^4.9.1"
   },
   "scripts": {
     "test": "standard && node test.js"
