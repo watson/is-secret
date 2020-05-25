@@ -9,6 +9,7 @@ var KEYS = [
   /token/i,
   /api[-._]?key/i,
   /session[-._]?id/i,
+  /authorization/i,
 
   // specific
   /^connect\.sid$/ // https://github.com/expressjs/session
