@@ -10,6 +10,7 @@ test('isSecret.key true', function (t) {
   t.equal(isSecret.key('api.key'), true)
   t.equal(isSecret.key('api_key'), true)
   t.equal(isSecret.key('apikey'), true)
+  t.equal(isSecret.key('authorization'), true)
   t.end()
 })
 
