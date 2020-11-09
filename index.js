@@ -21,13 +21,29 @@ var VALUES = [
 exports.key = key
 exports.value = value
 
+/**
+ * Converts any input to string.
+ * @data {any} Any JS type of data
+ * @returns string representation of that data or undefined if it can
+ * not be converted into a string.
+ */
+function inputToString (data) {
+  try {
+    return String(data)
+  } catch (err) {
+    if (err instanceof TypeError) return undefined
+    throw err
+  }
+}
+
 function key (str) {
   return KEYS.some(function (regex) {
     return regex.test(str)
   })
 }
 
-function value (str) {
+function value (data) {
+  var str = inputToString(data)
   return VALUES.some(function (regex) {
     return regex.test(str)
   })
